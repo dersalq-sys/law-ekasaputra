@@ -67,9 +67,14 @@ export function Footer() {
             </li>
             <li className="flex gap-3">
               <Phone className="h-4 w-4 text-gold shrink-0 mt-0.5" />
-              <a href="https://wa.me/6281234567890" className="hover:text-gold">
-                +62 812-3456-7890
-              </a>
+              <div className="space-y-1">
+                <a href="https://wa.me/6282289775235" className="block hover:text-gold">
+                  Eka Saputra, S.H. — 0822-8977-5235
+                </a>
+                <a href="https://wa.me/6283174938353" className="block hover:text-gold">
+                  Dersal — 0831-7493-8353
+                </a>
+              </div>
             </li>
             <li className="flex gap-3">
               <Mail className="h-4 w-4 text-gold shrink-0 mt-0.5" />

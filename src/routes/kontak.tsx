@@ -29,10 +29,11 @@ function KontakPage() {
           <Reveal className="lg:col-span-2">
             <div className="space-y-5">
               <ContactItem icon={MapPin} title="Alamat Kantor" text="Jorong Batang Lingkin, Nagari Aia Gadang Barat, Kecamatan Pasaman, Kabupaten Pasaman Barat" />
-              <ContactItem icon={Phone} title="Telepon / WhatsApp" text="+62 812-3456-7890" href="https://wa.me/6281234567890" />
+              <ContactItem icon={Phone} title="Eka Saputra, S.H." text="0822-8977-5235" href="https://wa.me/6282289775235" />
+              <ContactItem icon={Phone} title="Dersal (Paralegal)" text="0831-7493-8353" href="https://wa.me/6283174938353" />
               <ContactItem icon={Mail} title="Email" text="info@ekasaputra-law.id" href="mailto:info@ekasaputra-law.id" />
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6282289775235"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-gold text-primary-foreground px-6 py-3 rounded-full font-semibold shadow-gold hover:scale-[1.03] transition-transform"
