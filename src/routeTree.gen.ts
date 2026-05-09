@@ -9,8 +9,44 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TimRouteImport } from './routes/tim'
+import { Route as TestimoniRouteImport } from './routes/testimoni'
+import { Route as TentangRouteImport } from './routes/tentang'
+import { Route as LayananRouteImport } from './routes/layanan'
+import { Route as KontakRouteImport } from './routes/kontak'
+import { Route as ArtikelRouteImport } from './routes/artikel'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TimRoute = TimRouteImport.update({
+  id: '/tim',
+  path: '/tim',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TestimoniRoute = TestimoniRouteImport.update({
+  id: '/testimoni',
+  path: '/testimoni',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TentangRoute = TentangRouteImport.update({
+  id: '/tentang',
+  path: '/tentang',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LayananRoute = LayananRouteImport.update({
+  id: '/layanan',
+  path: '/layanan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KontakRoute = KontakRouteImport.update({
+  id: '/kontak',
+  path: '/kontak',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArtikelRoute = ArtikelRouteImport.update({
+  id: '/artikel',
+  path: '/artikel',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +55,116 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/artikel': typeof ArtikelRoute
+  '/kontak': typeof KontakRoute
+  '/layanan': typeof LayananRoute
+  '/tentang': typeof TentangRoute
+  '/testimoni': typeof TestimoniRoute
+  '/tim': typeof TimRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/artikel': typeof ArtikelRoute
+  '/kontak': typeof KontakRoute
+  '/layanan': typeof LayananRoute
+  '/tentang': typeof TentangRoute
+  '/testimoni': typeof TestimoniRoute
+  '/tim': typeof TimRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/artikel': typeof ArtikelRoute
+  '/kontak': typeof KontakRoute
+  '/layanan': typeof LayananRoute
+  '/tentang': typeof TentangRoute
+  '/testimoni': typeof TestimoniRoute
+  '/tim': typeof TimRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/artikel'
+    | '/kontak'
+    | '/layanan'
+    | '/tentang'
+    | '/testimoni'
+    | '/tim'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/artikel'
+    | '/kontak'
+    | '/layanan'
+    | '/tentang'
+    | '/testimoni'
+    | '/tim'
+  id:
+    | '__root__'
+    | '/'
+    | '/artikel'
+    | '/kontak'
+    | '/layanan'
+    | '/tentang'
+    | '/testimoni'
+    | '/tim'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ArtikelRoute: typeof ArtikelRoute
+  KontakRoute: typeof KontakRoute
+  LayananRoute: typeof LayananRoute
+  TentangRoute: typeof TentangRoute
+  TestimoniRoute: typeof TestimoniRoute
+  TimRoute: typeof TimRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/tim': {
+      id: '/tim'
+      path: '/tim'
+      fullPath: '/tim'
+      preLoaderRoute: typeof TimRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/testimoni': {
+      id: '/testimoni'
+      path: '/testimoni'
+      fullPath: '/testimoni'
+      preLoaderRoute: typeof TestimoniRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tentang': {
+      id: '/tentang'
+      path: '/tentang'
+      fullPath: '/tentang'
+      preLoaderRoute: typeof TentangRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/layanan': {
+      id: '/layanan'
+      path: '/layanan'
+      fullPath: '/layanan'
+      preLoaderRoute: typeof LayananRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kontak': {
+      id: '/kontak'
+      path: '/kontak'
+      fullPath: '/kontak'
+      preLoaderRoute: typeof KontakRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/artikel': {
+      id: '/artikel'
+      path: '/artikel'
+      fullPath: '/artikel'
+      preLoaderRoute: typeof ArtikelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,7 +177,23 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ArtikelRoute: ArtikelRoute,
+  KontakRoute: KontakRoute,
+  LayananRoute: LayananRoute,
+  TentangRoute: TentangRoute,
+  TestimoniRoute: TestimoniRoute,
+  TimRoute: TimRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
