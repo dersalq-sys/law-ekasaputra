@@ -5,10 +5,10 @@ import { Reveal } from "@/components/site/Reveal";
 import { Mail, Linkedin } from "lucide-react";
 import lawyer1 from "@/assets/lawyer-1.jpg";
 import lawyer2 from "@/assets/lawyer-2.jpg";
-import lawyer3 from "@/assets/lawyer-3.jpg";
+import dersalImg from "@/assets/paralegal-dersal.jpg";
 
 const lawyerImgs = [lawyer1, lawyer2];
-const paralegalImgs = [lawyer3];
+const paralegalImgs = [dersalImg];
 
 export const Route = createFileRoute("/tim")({
   head: () => ({
