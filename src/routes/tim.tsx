@@ -13,8 +13,8 @@ const paralegalImgs = [dersalImg];
 export const Route = createFileRoute("/tim")({
   head: () => ({
     meta: [
-      { title: "Tim Pengacara — Eka Saputra & Associates" },
-      { name: "description", content: "Profil pengacara dan paralegal Kantor Hukum Eka Saputra S.H & Associates." },
+      { title: "Tim Pengacara — Eka Saputra & Asociates" },
+      { name: "description", content: "Profil pengacara dan paralegal Kantor Hukum Eka Saputra S.H & Asociates." },
     ],
   }),
   component: TeamPage,

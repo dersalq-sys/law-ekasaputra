@@ -7,8 +7,8 @@ import { ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/artikel")({
   head: () => ({
     meta: [
-      { title: "Artikel Hukum — Eka Saputra & Associates" },
-      { name: "description", content: "Artikel dan wawasan hukum terkini dari tim Kantor Hukum Eka Saputra & Associates." },
+      { title: "Artikel Hukum — Eka Saputra & Asociates" },
+      { name: "description", content: "Artikel dan wawasan hukum terkini dari tim Kantor Hukum Eka Saputra & Asociates." },
     ],
   }),
   component: ArticlesPage,

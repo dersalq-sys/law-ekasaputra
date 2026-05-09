@@ -64,16 +64,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Kantor Hukum Eka Saputra S.H & Associates" },
+      { title: "Kantor Hukum Eka Saputra S.H & Asociates" },
       {
         name: "description",
         content:
           "Firma hukum profesional di Pasaman Barat. Pendampingan hukum perdata, pidana, sengketa tanah, waris, dan mediasi dengan integritas tinggi.",
       },
-      { property: "og:title", content: "Kantor Hukum Eka Saputra S.H & Associates" },
+      { property: "og:title", content: "Kantor Hukum Eka Saputra S.H & Asociates" },
       { property: "og:description", content: "Eka Saputra Legal is a professional website for a law firm, offering legal services and firm information." },
       { property: "og:type", content: "website" },
-      { name: "twitter:title", content: "Kantor Hukum Eka Saputra S.H & Associates" },
+      { name: "twitter:title", content: "Kantor Hukum Eka Saputra S.H & Asociates" },
       { name: "description", content: "Eka Saputra Legal is a professional website for a law firm, offering legal services and firm information." },
       { name: "twitter:description", content: "Eka Saputra Legal is a professional website for a law firm, offering legal services and firm information." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/uRSsJZ4joFfoBFANhBddArSPuLw1/social-images/social-1778286010273-foto_eka_dersa_mitra.webp" },

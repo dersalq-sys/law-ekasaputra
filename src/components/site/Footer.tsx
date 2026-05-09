@@ -13,7 +13,7 @@ export function Footer() {
             <div>
               <p className="font-display text-lg text-gold-gradient">Eka Saputra</p>
               <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                S.H & Associates
+                S.H & Asociates
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ export function Footer() {
 
       <div className="border-t border-border/60">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Kantor Hukum Eka Saputra S.H & Associates. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kantor Hukum Eka Saputra S.H & Asociates. All rights reserved.</p>
           <p className="tracking-widest uppercase">Integritas · Profesionalisme · Keadilan</p>
         </div>
       </div>

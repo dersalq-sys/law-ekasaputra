@@ -34,7 +34,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-3 group">
           <img
             src={logo}
-            alt="Eka Saputra & Associates"
+            alt="Eka Saputra & Asociates"
             className="h-12 w-12 object-contain drop-shadow-[0_0_20px_oklch(0.78_0.13_85/0.4)] transition-transform group-hover:scale-105"
             width={48}
             height={48}
@@ -44,7 +44,7 @@ export function Header() {
               Eka Saputra
             </span>
             <span className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-              S.H & Associates
+              S.H & Asociates
             </span>
           </div>
         </Link>

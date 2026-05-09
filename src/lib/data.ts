@@ -85,7 +85,7 @@ export const testimonials = [
     name: "Hendra W.",
     role: "Direktur Perusahaan",
     quote:
-      "Tim Eka Saputra & Associates menangani perkara kami dengan sangat profesional. Komunikasi jelas dan strategi hukum yang tajam.",
+      "Tim Eka Saputra & Asociates menangani perkara kami dengan sangat profesional. Komunikasi jelas dan strategi hukum yang tajam.",
   },
   {
     name: "Ibu Sari",
