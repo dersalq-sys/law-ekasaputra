@@ -45,7 +45,7 @@ export const team = [
     bio: "Pendiri firma dengan dedikasi tinggi dalam menangani perkara perdata, pidana, dan sengketa pertanahan di berbagai tingkat peradilan.",
   },
   {
-    name: "Ahmad Rajani, S.H., M.H., Adv.",
+    name: "Ahmad Rajani, SH, MH",
     role: "Senior Partner & Advokat",
     bio: "Advokat senior dengan keahlian litigasi mendalam, memberikan strategi hukum yang tajam dan solusi terukur untuk klien individu maupun korporasi.",
   },
