@@ -80,7 +80,7 @@ function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6283174938353"
               className="inline-flex items-center gap-2 glass px-7 py-3.5 rounded-full font-semibold tracking-wide text-foreground hover:border-gold/50 transition-all"
             >
               <Phone className="h-4 w-4 text-gold" />
@@ -382,7 +382,7 @@ function CTABanner() {
             <Link to="/kontak" className="bg-gradient-gold text-primary-foreground px-7 py-3.5 rounded-full font-semibold shadow-gold hover:scale-[1.03] transition-transform">
               Konsultasi Sekarang
             </Link>
-            <a href="https://wa.me/6281234567890" className="glass px-7 py-3.5 rounded-full font-semibold hover:border-gold/50 transition-all">
+            <a href="https://wa.me/6283174938353" className="glass px-7 py-3.5 rounded-full font-semibold hover:border-gold/50 transition-all">
               Chat WhatsApp
             </a>
           </div>
