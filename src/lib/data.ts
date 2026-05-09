@@ -42,17 +42,20 @@ export const team = [
   {
     name: "Eka Saputra, S.H.",
     role: "Founding Partner",
-    bio: "Lebih dari 15 tahun pengalaman menangani perkara perdata, pidana, dan sengketa pertanahan di berbagai tingkat peradilan.",
+    bio: "Pendiri firma dengan dedikasi tinggi dalam menangani perkara perdata, pidana, dan sengketa pertanahan di berbagai tingkat peradilan.",
   },
   {
-    name: "Rahma Putri, S.H., M.H.",
-    role: "Senior Associate",
-    bio: "Spesialis hukum keluarga, waris, dan mediasi dengan track record penyelesaian sengketa yang humanis.",
+    name: "Ahmad Rajani, S.H., M.H., Adv.",
+    role: "Senior Partner & Advokat",
+    bio: "Advokat senior dengan keahlian litigasi mendalam, memberikan strategi hukum yang tajam dan solusi terukur untuk klien individu maupun korporasi.",
   },
+] as const;
+
+export const paralegals = [
   {
-    name: "Bayu Pratama, S.H.",
-    role: "Litigation Counsel",
-    bio: "Berpengalaman dalam strategi litigasi korporasi dan pendampingan hukum klien institusi.",
+    name: "Dersal",
+    role: "Paralegal",
+    bio: "Mendukung tim advokat dalam riset hukum, penyusunan dokumen, dan administrasi perkara dengan ketelitian tinggi.",
   },
 ] as const;
 
