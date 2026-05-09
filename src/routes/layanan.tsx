@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/layanan")({
   head: () => ({
     meta: [
-      { title: "Layanan Hukum — Eka Saputra & Associates" },
+      { title: "Layanan Hukum — Eka Saputra & Asociates" },
       { name: "description", content: "Layanan hukum lengkap: perdata, pidana, sengketa tanah, waris, mediasi, litigasi, dan konsultasi." },
     ],
   }),

@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Beranda — Kantor Hukum Eka Saputra S.H & Associates" },
+      { title: "Beranda — Kantor Hukum Eka Saputra S.H & Asociates" },
       {
         name: "description",
         content:
@@ -60,7 +60,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8 py-32 grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-8">
           <p className="animate-fade-up text-[11px] uppercase tracking-[0.4em] text-gold mb-6">
-            Kantor Hukum Eka Saputra S.H & Associates
+            Kantor Hukum Eka Saputra S.H & Asociates
           </p>
           <h1 className="animate-fade-up delay-100 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground">
             Menegakkan{" "}
@@ -206,7 +206,7 @@ function AboutPreview() {
             <span className="text-gold-gradient italic">Integritas</span>
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            Kantor Hukum Eka Saputra S.H & Associates didirikan dengan semangat
+            Kantor Hukum Eka Saputra S.H & Asociates didirikan dengan semangat
             menghadirkan layanan hukum berkualitas tinggi yang berlandaskan
             integritas, profesionalisme, dan keberpihakan pada keadilan.
           </p>

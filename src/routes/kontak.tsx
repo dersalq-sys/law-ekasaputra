@@ -7,8 +7,8 @@ import { useState } from "react";
 export const Route = createFileRoute("/kontak")({
   head: () => ({
     meta: [
-      { title: "Kontak — Eka Saputra & Associates" },
-      { name: "description", content: "Hubungi Kantor Hukum Eka Saputra S.H & Associates di Pasaman Barat untuk konsultasi hukum." },
+      { title: "Kontak — Eka Saputra & Asociates" },
+      { name: "description", content: "Hubungi Kantor Hukum Eka Saputra S.H & Asociates di Pasaman Barat untuk konsultasi hukum." },
     ],
   }),
   component: KontakPage,

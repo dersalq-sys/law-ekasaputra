@@ -7,8 +7,8 @@ import { Target, Eye, HeartHandshake } from "lucide-react";
 export const Route = createFileRoute("/tentang")({
   head: () => ({
     meta: [
-      { title: "Tentang Kami — Eka Saputra & Associates" },
-      { name: "description", content: "Mengenal lebih dekat firma hukum Eka Saputra S.H & Associates — visi, misi, dan komitmen kami." },
+      { title: "Tentang Kami — Eka Saputra & Asociates" },
+      { name: "description", content: "Mengenal lebih dekat firma hukum Eka Saputra S.H & Asociates — visi, misi, dan komitmen kami." },
     ],
   }),
   component: AboutPage,
@@ -32,7 +32,7 @@ function AboutPage() {
             <h2 className="font-display text-3xl md:text-4xl">Sejarah Singkat</h2>
             <div className="mt-3 h-px w-20 bg-gradient-gold" />
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Kantor Hukum Eka Saputra S.H & Associates didirikan dengan landasan
+              Kantor Hukum Eka Saputra S.H & Asociates didirikan dengan landasan
               komitmen untuk memberikan pelayanan hukum yang berkualitas tinggi
               kepada masyarakat. Berbasis di Pasaman Barat, kami melayani klien
               dari berbagai daerah dengan jangkauan praktik nasional.

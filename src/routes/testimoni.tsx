@@ -7,7 +7,7 @@ import { Quote, Star } from "lucide-react";
 export const Route = createFileRoute("/testimoni")({
   head: () => ({
     meta: [
-      { title: "Testimoni — Eka Saputra & Associates" },
+      { title: "Testimoni — Eka Saputra & Asociates" },
       { name: "description", content: "Testimoni klien yang telah mempercayakan permasalahan hukum kepada kami." },
     ],
   }),
